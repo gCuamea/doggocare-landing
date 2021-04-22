@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./src/styles/bootstrap.min.css" />
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <script defer src="./src/js/navbar.js"></script>
+
+    <title>DoggoCare</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
+      <div class="container-fluid">
+        <div class="div">
+          <a class="navbar-brand ms-5" href="#">Doggocares</a>
+          <img
+            class="navbar-brand-img"
+            src="./src/assets/white-paw-1.png"
+            alt="Doggocare logo"
+          />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >What's Doggocare?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meet us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="container-fluid p-0 header">
+      <video
+        class="header__video"
+        playsinline
+        autoplay
+        muted
+        loop
+        poster="..."
+        id="bgvid"
+      >
+        <source src="./src/assets/hero-1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="header__intro mx-auto">
+        <div class="header__intro-text">
+          <h1>DoggoCare</h1>
+          <p class="pb-2">
+            Professional pet sitters for all your best friend needs.
+          </p>
+          <div class="header__intro-btns d-flex align-items-center">
+            <button type="button" class="btn btn-success me-3">
+              Book a pet sitter today
+            </button>
+            <button type="button" class="btn btn-outline-warning">
+              Learn more about us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="transition">
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+      </div>
+      <section class="container aboutus">
+        <div class="row gx-5">
+          <div class="col-md-6 col-12">
+            <div class="aboutus__left">
+              <h2>FOR EVERY PET, A CARING PERSON.</h2>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt
+                hic earum distinctio exercitationem soluta nihil. Ipsum maxime
+                consequuntur sapiente laudantium odio illum iure saepe!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                obcaecati aperiam quisquam, laborum impedit deleniti
+                voluptatibus vitae excepturi vero aliquid facere repellendus sit
+                illo asperiores ut eius quibusdam qui quo, dolore possimus enim
+                quod. Exercitationem quibusdam perspiciatis eos repellendus
+                deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="aboutus__right"></div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews__sponsors container-fluid">
+        <div class="row text-center">
+          <div class="col-md-3 col-6">
+            <div
+              class="reviews__sponsors__box d-flex flex-column justify-content-between"
+            >
+              <p>My dog always comes back happy and relaxed.</p>
+              <div
+                class="reviews__sponsors__box-bottom d-flex justify-content-center align-items-center"
+              >
+                <img src="./src/assets/face-2.png" alt="Client photo" />
+                <h3 class="m-0">&mdash;Julio Hel</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div
+              class="reviews__sponsors__box d-flex flex-column justify-content-between"
+            >
+              <p>Im starting to think my dog likes the sitter more than me.</p>
+              <div
+                class="reviews__sponsors__box-bottom d-flex justify-content-center align-items-center"
+              >
+                <img src="./src/assets/face-1.png" alt="Client photo" />
+                <h3 class="m-0">&mdash;Lisa Estrada</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div
+              class="reviews__sponsors__box d-flex flex-column justify-content-between"
+            >
+              <p>Theres no place better my dudes.</p>
+              <div
+                class="reviews__sponsors__box-bottom d-flex justify-content-center align-items-center"
+              >
+                <img src="./src/assets/face-3.png" alt="Client photo" />
+                <h3 class="m-0">&mdash;Greg Thomas</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div
+              class="reviews__sponsors__box d-flex flex-column justify-content-between"
+            >
+              <p>
+                I was surprised from the first time i met them, completely
+                professional and they had no problems dealing with my big doggo.
+              </p>
+              <div
+                class="reviews__sponsors__box-bottom d-flex justify-content-center align-items-center"
+              >
+                <img src="./src/assets/face-4.png" alt="Client photo" />
+                <h3 class="m-0">&mdash;Martin Aro</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-12">
+            <div class="reviews__sponsors__box">
+              <h2>3000+ 5 star reviews</h2>
+              <div class="star-container mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <a class="text-decoration-none fs-4" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ! SALES PLANS -->
+      <!-- ! SALES PLANS -->
+      <!-- ! SALES PLANS -->
+      <section class="container">
+        <div class="sales">
+          <img
+            class="overlapping-image"
+            src="./src/assets/doggo-1.png"
+            alt="Side dog photo"
+          />
+          <div class="sales__tryit">
+            <h2>Try our services for free</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              sunt sit laborum hic error inventore!
+            </p>
+          </div>
+          <div class="sales__pricing">
+            <div class="sales__pricing__box">
+              <h3 class="csBtn csBtn-basic">The basic plan</h3>
+              <div class="sales__pricing__box-monetary">
+                <span>$</span>
+                <h2>12</h2>
+                <div class="sales__pricing__box-monetary-extra">
+                  <p>per pet</p>
+                  <p>per month</p>
+                </div>
+              </div>
+              <div class="sales__features">
+                <p>Limited Scheduling Links</p>
+                <p>Limited Pet-grooms</p>
+                <p>Limited Events</p>
+              </div>
+            </div>
+            <div class="sales__pricing__box">
+              <h3 class="csBtn csBtn-premium">The premium plan</h3>
+              <div class="sales__pricing__box-monetary">
+                <span>$</span>
+                <h2>25</h2>
+                <div class="sales__pricing__box-monetary-extra">
+                  <p>per pet</p>
+                  <p>per month</p>
+                </div>
+              </div>
+              <div class="sales__features">
+                <p>Unlimited Scheduling Links</p>
+                <p>Unlimited Pet-grooms</p>
+                <p>Unlimited Events</p>
+              </div>
+            </div>
+          </div>
+          <div class="sales__save">
+            <h2>A few ways to save...</h2>
+            <div class="sales__save-extra">
+              <p>
+                Get <span>2 months free</span> when you choose annual billing
+                [Icono]
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt, vel. &hearts;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <h2>Doggocare</h2>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="row gx-5">
+            <div class="col-md-3 col-sm-6 col-6">
+              <h3>Platform</h3>
+              <ul>
+                <li><a href="#">Web Application</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+              <h3>Platform</h3>
+              <ul>
+                <li><a href="#">Web Application</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+              <h3>Platform</h3>
+              <ul>
+                <li><a href="#">Web Application</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+              <h3>Platform</h3>
+              <ul>
+                <li><a href="#">Web Application</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="footer__social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-twitch"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="#">DMCA Notice</a>
+        <a href="#">Privacy</a>
+        <a href="#">GDPR</a>
+        <a href="#">TERMS & CONDITIONS</a>
+        <a href="#">About</a>
+        <a href="#">&copy; 2021 Doggocare Inc. All rights reserved.</a>
+      </div>
+    </footer>
+  </body>
+</html>

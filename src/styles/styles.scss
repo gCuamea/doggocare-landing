@@ -1,0 +1,407 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  /*   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  min-height: 100vh;
+}
+
+.navbar {
+  background: transparent !important;
+
+  &-brand {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+
+    &-img {
+      height: 4rem;
+      transform: translateY(-1rem) translateX(-0.8rem);
+    }
+  }
+
+  &-nav {
+    font-size: 2rem;
+  }
+}
+
+.nav-item {
+  font-size: 4rem;
+  margin-right: 4rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+
+  &__intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+
+    &-text {
+      display: inline-block;
+      padding: 10rem 40vw 30rem 10rem;
+      color: white;
+
+      h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 9rem;
+      }
+
+      p {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.9rem;
+        border-bottom: 2px solid white;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-btns {
+      height: 5rem;
+    }
+  }
+
+  background: linear-gradient(to right, #4d3701cb, #f1801769);
+
+  &__video {
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.reviews__sponsors {
+  // height: 35rem;
+  height: auto;
+  margin-bottom: 4rem;
+  .row {
+    height: 100%;
+  }
+
+  &__box {
+    height: 100%;
+    padding-top: 3rem;
+
+    &-bottom {
+      img {
+        display: inline-block;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 0.7rem;
+      }
+    }
+
+    p {
+      color: gray;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.star-container {
+  font-size: 2.3rem;
+  color: #daaf50;
+}
+
+.meet__us {
+  /* margin: 0 10rem; */
+}
+
+.sales {
+  display: flex;
+  flex-flow: column;
+  border: 3px dashed rgb(255, 214, 161);
+  border-radius: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  // display: relative;
+  position: relative;
+
+  .overlapping-image {
+    position: absolute;
+    width: 25vw;
+    bottom: 0;
+    left: -10vw;
+
+    @media only screen and (max-width: 767px) {
+      bottom: 40%;
+      left: -30vw;
+      width: 50vw;
+    }
+  }
+
+  /* padding-top: 6rem;
+  padding-bottom: 3rem; */
+
+  padding: 6rem 4rem 3rem;
+  margin-bottom: 10rem;
+
+  &__tryit {
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 3.8rem;
+      font-weight: 700;
+    }
+    p {
+      display: block;
+      font-size: 1.6rem;
+      width: 35rem;
+    }
+  }
+
+  &__pricing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    &__box {
+      padding: 3rem 0;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 30rem;
+
+      &:first-child {
+        border-right: 1px solid gray;
+
+        @media only screen and (max-width: 767px) {
+          border-right: 0;
+
+          border-bottom: 1px solid gray;
+        }
+      }
+
+      &-monetary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          font-size: 8rem;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        span {
+          font-size: 3rem;
+          font-weight: 700;
+          color: rgb(121, 121, 121);
+        }
+
+        &-extra {
+          margin-left: 0.5rem;
+
+          display: flex;
+          flex-flow: column;
+          height: 100%;
+
+          p {
+            display: block;
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: rgb(121, 121, 121);
+            margin-bottom: 0;
+            // margin-bottom: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__features {
+    font-size: 1rem;
+    text-align: center;
+
+    line-height: 0.5;
+  }
+
+  &__save {
+    margin-top: 3rem;
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.6rem;
+      line-height: 2.6;
+    }
+
+    p {
+      span {
+        font-weight: 700;
+      }
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+  }
+}
+
+.csBtn {
+  font-weight: 800;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  margin: 0;
+  &-basic {
+    background-color: #94f3d7;
+  }
+
+  &-premium {
+    background-color: #ecba4d;
+  }
+}
+
+.aboutus {
+  height: auto;
+  padding: 3rem;
+  padding-top: 5rem;
+
+  background-color: #ffffff;
+  background-image: radial-gradient(#c7c7d1 1px, transparent 1px),
+    radial-gradient(#d3d3d3 1px, #ffffff 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+
+  &__left {
+    padding: 6vh 3vw;
+
+    h2 {
+      font-size: 4.4rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  &__right {
+    display: block;
+    height: 90vh;
+    background-image: url(../../src/assets/emily-walking-1.jpg);
+    background-size: cover;
+  }
+}
+
+.transition {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  margin-top: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  i {
+    font-size: 1.3rem;
+
+    &:first-child {
+      color: #e7c57a;
+    }
+
+    &:nth-child(2) {
+      color: #727272;
+    }
+    &:nth-child(3) {
+      color: #94f3d7;
+    }
+  }
+}
+
+.footer {
+  background-color: #00080c;
+  padding: 5rem 15vw;
+
+  color: white;
+
+  h2 {
+    padding: 1rem;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #727272;
+    font-size: 1.3rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  &__social {
+    margin-top: 2rem;
+    i {
+      margin-right: 1.3rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    a {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      margin: 1rem 3rem;
+    }
+  }
+}
+
+.darkbg {
+  transition: background-color 1s ease;
+  background-color: #c78c3eb7 !important;
+}
